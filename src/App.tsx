@@ -256,7 +256,7 @@ function App() {
                     } group-hover:scale-110`}
                   />
 
-<div className="absolute -inset-2 bg-gradient-to-r from-black via-[#6FD923] to-[#6FD923]/30 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                  <div className="absolute -inset-2 bg-gradient-to-r from-black via-[#6FD923] to-[#6FD923]/30 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
               </div>
             </div>
@@ -337,14 +337,14 @@ function App() {
       >
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
-<div className="absolute inset-0 bg-gradient-to-br from-[#5AC41F]/30 via-[#0D0D0D]/75 to-[#5AC41F]/30 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#5AC41F]/30 via-[#0D0D0D]/75 to-[#5AC41F]/30 z-10"></div>
           <img
             src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Construction background"
             className="w-full h-full object-cover"
           />
           {/* Animated overlay */}
-<div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/20 via-[#0D0D0D]/20 to-[#0D0D0D]/30 animate-pulse z-5"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/20 via-[#0D0D0D]/20 to-[#0D0D0D]/30 animate-pulse z-5"></div>
         </div>
 
         {/* Floating particles */}
@@ -421,7 +421,7 @@ function App() {
               }`}
             >
               <div className="relative group">
-<div className="absolute -inset-4 bg-gradient-to-r from-[#0D0D0D]/40 to-[#0D0D0D]/10 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300 animate-pulse"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-[#0D0D0D]/40 to-[#0D0D0D]/10 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-300 animate-pulse"></div>
                 <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
                   <img
                     src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -479,144 +479,156 @@ function App() {
       </section>
 
       {/* Valores Section */}
-<section
-  id="valores"
-  className="py-24 bg-gradient-to-br from-[#F0FDF4] to-[#E0F7FA] relative overflow-hidden"
->
-  {/* Background glow blobs */}
-  <div className="absolute inset-0 opacity-10 pointer-events-none">
-    <div className="absolute top-10 left-10 w-72 h-72 bg-[#6FD923]/30 rounded-full blur-3xl animate-blob"></div>
-    <div className="absolute bottom-10 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-  </div>
+      <section
+        id="valores"
+        className="py-24 bg-gradient-to-br from-[#F0FDF4] to-[#E0F7FA] relative overflow-hidden"
+      >
+        {/* Background glow blobs */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-[#6FD923]/30 rounded-full blur-3xl animate-blob"></div>
+          <div className="absolute bottom-10 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+        </div>
 
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* Header */}
-    <div
-      className={`text-center mb-16 transform transition-all duration-1000 ${
-        isVisible.valores ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-      }`}
-    >
-      <span className="px-4 py-2 bg-gradient-to-r from-[#6FD923] to-green-600 text-white text-sm font-semibold rounded-full shadow-lg">
-        💎 Nuestros Principios
-      </span>
-      <h2 className="text-5xl font-bold bg-gradient-to-r from-[#6FD923] to-green-700 bg-clip-text text-transparent mb-6">
-        Nuestros Valores
-      </h2>
-      <p className="text-xl text-slate-700 max-w-3xl mx-auto">
-        Los principios que guían cada uno de nuestros proyectos y nos definen como empresa.
-      </p>
-    </div>
-
-    {/* Valores Cards */}
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {valores.map((valor, index) => (
-        <div
-          key={index}
-          className={`group relative transform transition-all duration-1000 hover:scale-105 ${
-            isVisible.valores ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}
-          style={{ transitionDelay: `${index * 150}ms` }}
-        >
-          {/* Glow overlay */}
-          <div className="absolute -inset-2 bg-gradient-to-r from-[#6FD923]/40 to-[#6FD923]/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
-
-          <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-400">
-            <div
-              className={`w-16 h-16 bg-gradient-to-r ${valor.color} rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-12 group-hover:scale-110 transition-transform duration-500 shadow-lg`}
-            >
-              {valor.icon}
-            </div>
-            <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#6FD923] transition-colors duration-500">
-              {valor.name}
-            </h3>
-            <div className="w-0 group-hover:w-full h-1 bg-gradient-to-r from-[#6FD923] to-green-600 transition-all duration-500 rounded-full"></div>
-            <p className="mt-4 text-slate-600 group-hover:text-slate-800 transition-colors duration-500">
-              {valor.description || "Descripción breve de este valor."}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div
+            className={`text-center mb-16 transform transition-all duration-1000 ${
+              isVisible.valores
+                ? "translate-y-0 opacity-100"
+                : "translate-y-10 opacity-0"
+            }`}
+          >
+            <span className="px-4 py-2 bg-gradient-to-r from-[#6FD923] to-green-600 text-white text-sm font-semibold rounded-full shadow-lg">
+              💎 Nuestros Principios
+            </span>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-[#6FD923] to-green-700 bg-clip-text text-transparent mb-6">
+              Nuestros Valores
+            </h2>
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+              Los principios que guían cada uno de nuestros proyectos y nos
+              definen como empresa.
             </p>
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
 
+          {/* Valores Cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {valores.map((valor, index) => (
+              <div
+                key={index}
+                className={`group relative transform transition-all duration-1000 hover:scale-105 ${
+                  isVisible.valores
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-20 opacity-0"
+                }`}
+                style={{ transitionDelay: `${index * 150}ms` }}
+              >
+                {/* Glow overlay */}
+                <div className="absolute -inset-2 bg-gradient-to-r from-[#6FD923]/40 to-[#6FD923]/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
 
-      {/* Misión, Visión, Política Section */}
-<section id="mision" className="py-24 bg-gradient-to-br from-[#F0FDF4] to-[#E0F7FA] relative overflow-hidden">
-  {/* Fondo decorativo opcional */}
-  <div className="absolute inset-0 opacity-10 pointer-events-none">
-    <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl animate-blob"></div>
-    <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-200/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-  </div>
-
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* Header */}
-    <div
-      className={`text-center mb-16 transform transition-all duration-1000 ${
-        isVisible.mision ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-      }`}
-    >
-      <div className="inline-block mb-4">
-        <span className="px-4 py-2 bg-gradient-to-r from-green-600 to-blue-600 text-white text-sm font-semibold rounded-full">
-          🎯 Nuestra Identidad
-        </span>
-      </div>
-      <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-900 to-green-900 bg-clip-text text-transparent mb-6">
-        Quiénes Somos
-      </h2>
-    </div>
-
-    {/* Cards */}
-    <div className="grid lg:grid-cols-3 gap-8">
-      {[
-        {
-          title: "Misión",
-          icon: <Building2 className="w-10 h-10" />,
-          color: "from-blue-600 to-blue-800",
-          content:
-            "Brindar servicios de diseño y construcción con altos estándares de calidad, innovación tecnológica y seguridad, ofreciendo soluciones sostenibles con enfoque en excelencia.",
-        },
-        {
-          title: "Visión",
-          icon: <Target className="w-10 h-10" />,
-          color: "from-orange-600 to-red-600",
-          content:
-            "Ser reconocida como líder en diseño y construcción, referencia en prácticas constructivas sostenibles e innovadoras.",
-        },
-        {
-          title: "Política de Calidad",
-          icon: <Award className="w-10 h-10" />,
-          color: "from-green-600 to-emerald-600",
-          content:
-            "Compromiso con los clientes mediante mejora continua, brindando confianza y soluciones profesionales.",
-        },
-      ].map((item, index) => (
-        <div
-          key={index}
-          className={`group relative transform transition-all duration-1000 hover:scale-105 ${
-            isVisible.mision ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}
-          style={{ transitionDelay: `${index * 200}ms` }}
-        >
-          <div className="absolute -inset-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl blur"></div>
-          <div className="relative bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-100 h-full">
-            <div
-              className={`w-20 h-20 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-6 transition-transform duration-300 shadow-lg`}
-            >
-              {item.icon}
-            </div>
-            <h3 className="text-2xl font-bold text-blue-900 mb-4 group-hover:text-purple-900 transition-colors">
-              {item.title}
-            </h3>
-            <p className="text-slate-700 leading-relaxed">{item.content}</p>
-            <div className="mt-6 w-0 group-hover:w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-700 rounded-full"></div>
+                <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:border-green-400">
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-r ${valor.color} rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-12 group-hover:scale-110 transition-transform duration-500 shadow-lg`}
+                  >
+                    {valor.icon}
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#6FD923] transition-colors duration-500">
+                    {valor.name}
+                  </h3>
+                  <div className="w-0 group-hover:w-full h-1 bg-gradient-to-r from-[#6FD923] to-green-600 transition-all duration-500 rounded-full"></div>
+                  <p className="mt-4 text-slate-600 group-hover:text-slate-800 transition-colors duration-500">
+                    {valor.description || "Descripción breve de este valor."}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
+      {/* Misión, Visión, Política Section */}
+      <section
+        id="mision"
+        className="py-24 bg-gradient-to-br from-[#F0FDF4] to-[#E0F7FA] relative overflow-hidden"
+      >
+        {/* Fondo decorativo opcional */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl animate-blob"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-200/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div
+            className={`text-center mb-16 transform transition-all duration-1000 ${
+              isVisible.mision
+                ? "translate-y-0 opacity-100"
+                : "translate-y-10 opacity-0"
+            }`}
+          >
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 bg-gradient-to-r from-green-600 to-blue-600 text-white text-sm font-semibold rounded-full">
+                🎯 Nuestra Identidad
+              </span>
+            </div>
+            <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-900 to-green-900 bg-clip-text text-transparent mb-6">
+              Quiénes Somos
+            </h2>
+          </div>
+
+          {/* Cards */}
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Misión",
+                icon: <Building2 className="w-10 h-10" />,
+                color: "from-blue-600 to-blue-800",
+                content:
+                  "Brindar servicios de diseño y construcción con altos estándares de calidad, innovación tecnológica y seguridad, ofreciendo soluciones sostenibles con enfoque en excelencia.",
+              },
+              {
+                title: "Visión",
+                icon: <Target className="w-10 h-10" />,
+                color: "from-orange-600 to-red-600",
+                content:
+                  "Ser reconocida como líder en diseño y construcción, referencia en prácticas constructivas sostenibles e innovadoras.",
+              },
+              {
+                title: "Política de Calidad",
+                icon: <Award className="w-10 h-10" />,
+                color: "from-green-600 to-emerald-600",
+                content:
+                  "Compromiso con los clientes mediante mejora continua, brindando confianza y soluciones profesionales.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className={`group relative transform transition-all duration-1000 hover:scale-105 ${
+                  isVisible.mision
+                    ? "translate-y-0 opacity-100"
+                    : "translate-y-20 opacity-0"
+                }`}
+                style={{ transitionDelay: `${index * 200}ms` }}
+              >
+                <div className="absolute -inset-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl blur"></div>
+                <div className="relative bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-100 h-full">
+                  <div
+                    className={`w-20 h-20 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-6 transition-transform duration-300 shadow-lg`}
+                  >
+                    {item.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4 group-hover:text-purple-900 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-700 leading-relaxed">
+                    {item.content}
+                  </p>
+                  <div className="mt-6 w-0 group-hover:w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-700 rounded-full"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Servicios Section */}
       <section
@@ -759,8 +771,26 @@ function App() {
                   <h3 className="text-white font-bold text-xl mb-2 group-hover:text-green-300 transition-colors">
                     Teléfonos
                   </h3>
-                  <p className="text-blue-200 text-lg">81 84 64 66 48</p>
-                  <p className="text-blue-200 text-lg">81 32 78 86 70</p>
+                  <p className="text-blue-200 text-lg">
+                    <a
+                      href="https://wa.me/5218184646648"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      81 84 64 66 48
+                    </a>
+                  </p>
+                  <p className="text-blue-200 text-lg">
+                    <a
+                      href="https://wa.me/5218132788670"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      81 32 78 86 70
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="group flex items-center space-x-6 p-6 bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300">
@@ -772,9 +802,22 @@ function App() {
                     Correos Electrónicos
                   </h3>
                   <p className="text-blue-200">
-                    benjamin.moreno@7bjproyectos.com
+                    <a
+                      href="mailto:benjamin.moreno@7bjproyectos.com"
+                      className="hover:underline"
+                    >
+                      benjamin.moreno@7bjproyectos.com
+                    </a>
                   </p>
-                  <p className="text-blue-200">jorge.zuniga@7bjproyectos.com</p>
+
+                  <p className="text-blue-200">
+                    <a
+                      href="mailto:jorge.zuniga@7bjproyectos.com"
+                      className="hover:underline"
+                    >
+                      jorge.zuniga@7bjproyectos.com
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-lg p-8 rounded-2xl border border-orange-500/30 group hover:from-orange-500/30 hover:to-red-500/30 transition-all duration-300">
@@ -789,10 +832,12 @@ function App() {
                   construcción o diseño.
                 </p>
                 <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 font-semibold shadow-2xl">
-                  <span className="flex items-center space-x-2">
-                    <span>Solicitar Información</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </span>
+                  <a href="mailto:benjamin.moreno@7bjproyectos.com">
+                    <span className="flex items-center space-x-2">
+                      <span>Solicitar Información</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </span>
+                  </a>
                 </button>
               </div>
             </div>
@@ -804,8 +849,7 @@ function App() {
                   ? "translate-x-0 opacity-100"
                   : "translate-x-20 opacity-0"
               }`}
-            >
-            </div>
+            ></div>
           </div>
         </div>
       </section>
@@ -833,13 +877,34 @@ function App() {
               </h4>
               <div className="space-y-2 text-slate-400 text-sm">
                 <p className="hover:text-white transition-colors cursor-pointer">
-                  📞 Tel: 81 84 64 66 48
+                  <a
+                    href="https://wa.me/5218184646648"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    📞 Tel: 81 84 64 66 48
+                  </a>
                 </p>
                 <p className="hover:text-white transition-colors cursor-pointer">
-                  📞 Tel: 81 32 78 86 70
+                  <a
+                    href="https://wa.me/5218132788670"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    📞 Tel: 81 32 78 86 70
+                  </a>
                 </p>
+
                 <p className="hover:text-white transition-colors cursor-pointer">
-                  ✉️ benjamin.moreno@7bjproyectos.com
+                  <a
+                    href="mailto:benjamin.moreno@7bjproyectos.com"
+                    className="hover:underline"
+                  >
+                    {" "}
+                    ✉️ benjamin.moreno@7bjproyectos.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -865,7 +930,7 @@ function App() {
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center">
             <p className="text-slate-400 text-sm">
-              © 2024 7BJ Proyectos Diseño y Construcción S.A. de C.V. Todos los
+              © 2025 7BJ Proyectos Diseño y Construcción S.A. de C.V. Todos los
               derechos reservados.
             </p>
           </div>
