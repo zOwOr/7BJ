@@ -32,6 +32,7 @@ import {
 } from "lucide-react";
 import logo from "./img/logo.png";
 import logoDark from "./img/logoDark.png";
+import mainImage from "./img/hero.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -339,7 +340,7 @@ function App() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#5AC41F]/30 via-[#0D0D0D]/75 to-[#5AC41F]/30 z-10"></div>
           <img
-            src="/src/img/hero.png"
+            src={mainImage}
             alt="Construction background"
             className="w-full h-full object-cover"
           />
