@@ -217,8 +217,8 @@ function App() {
       icon: <CheckCircle className="w-8 h-8" />,
     },
     {
-      number: "Nos avalan",
-      label: "Años de Experiencia",
+      number: "Atencion ",
+      label: "Personalizada Durante Tu Proyecto",
       icon: <TrendingUp className="w-8 h-8" />,
     },
     {
@@ -263,7 +263,7 @@ function App() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              {["inicio", "valores", "mision", "servicios", "contacto"].map(
+              {["inicio", "valores", "mision", "servicios"].map(
                 (item, index) => (
                   <button
                     key={item}
@@ -339,7 +339,7 @@ function App() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#5AC41F]/30 via-[#0D0D0D]/75 to-[#5AC41F]/30 z-10"></div>
           <img
-            src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/src/img/hero.png"
             alt="Construction background"
             className="w-full h-full object-cover"
           />
@@ -515,7 +515,7 @@ function App() {
             {valores.map((valor, index) => (
               <div
                 key={index}
-                className={`group relative transform transition-all duration-1000 hover:scale-105 ${
+                className={`group relative transform transition-all duration-500 ease-out hover:scale-125 hover:z-20 ${
                   isVisible.valores
                     ? "translate-y-0 opacity-100"
                     : "translate-y-20 opacity-0"
@@ -828,8 +828,8 @@ function App() {
                   </h3>
                 </div>
                 <p className="text-blue-200 mb-6 text-lg">
-                  Solicite una cotización gratuita para su proyecto de
-                  construcción o diseño.
+                  Solicite una cotización para su proyecto de construcción o
+                  diseño.
                 </p>
                 <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-full hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 font-semibold shadow-2xl">
                   <a href="mailto:benjamin.moreno@7bjproyectos.com">
