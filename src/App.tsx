@@ -99,36 +99,50 @@ function App() {
       name: "Innovación",
       icon: <Zap className="w-8 h-8" />,
       color: "from-blue-500 to-cyan-500",
+      description:
+        "Mantenemos una Actualización constante para el desarrollo de nuevas técnicas de trabajo, implementación de tecnología así como estrategia y desarrollo de capacitaciones conforme al Mercado Global que nos impulsa al crecimiento permanente.",
     },
     {
       name: "Seguridad",
       icon: <Shield className="w-8 h-8" />,
       color: "from-green-500 to-emerald-500",
+      description:
+        "Implementamos la seguridad en todas nuestras actividades excediendo normas nacionales o extranjeras con la finalidad de la prevención de riesgos que pudieran generar un daño a la integridad física así como para las instalaciones y el medio ambiente.",
     },
     {
       name: "Trabajo en equipo",
       icon: <Users className="w-8 h-8" />,
       color: "from-purple-500 to-pink-500",
+      description:
+        "Mantenemos el enfoque en la integración y sinergia con nuestro personal altamente calificado, que nos brinda una red de soporte técnico y especializado para nuestros clientes.",
     },
     {
       name: "Responsabilidad",
       icon: <Award className="w-8 h-8" />,
       color: "from-orange-500 to-red-500",
+      description:
+        "Somos conscientes de la obligación que adquirimos al brindar un servicio y el impacto que este genera, por lo cual buscamos un firme compromiso de mejorar las condiciones de nuestros clientes y sociedad a través de proyectos que ayuden con el mejoramiento social, económico y ambiental",
     },
     {
       name: "Calidad",
       icon: <Star className="w-8 h-8" />,
       color: "from-yellow-500 to-orange-500",
+      description:
+        "Nuestro compromiso es ofrecer a nuestros clientes soluciones de innovación y mejora continua para el desarrollo de elementos con un alto conocimiento, atención al detalle, habilidad, buena comunicación y manejo de la seguridad en la ejecución de sus actividades, así como el cuidado de las instalaciones y el medio ambiente.",
     },
     {
       name: "Respeto",
       icon: <Heart className="w-8 h-8" />,
       color: "from-pink-500 to-rose-500",
+      description:
+        "Fomentamos el respeto en todos nuestros niveles, con la firme convicción de que todo el personal de nuestra compañía es un elemento valioso y de alta calidad para los servicios que proporcionamos a nuestros clientes.",
     },
     {
       name: "Excelencia",
       icon: <Target className="w-8 h-8" />,
       color: "from-indigo-500 to-blue-500",
+      description:
+        "Nuestro objetivo es lograr que nuestros resultados resuelvan las necesidades de nuestros clientes, superando sus expectativas y generando confianza plena en la calidad de nuestros proyectos y servicios.",
     },
   ];
 
@@ -547,89 +561,102 @@ function App() {
       </section>
 
       {/* Misión, Visión, Política Section */}
-      <section
-        id="mision"
-        className="py-24 bg-gradient-to-br from-[#F0FDF4] to-[#E0F7FA] relative overflow-hidden"
-      >
-        {/* Fondo decorativo opcional */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl animate-blob"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-200/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-        </div>
+<section
+  id="mision"
+  className="py-24 bg-gradient-to-br from-[#F0FDF4] to-[#E0F7FA] relative overflow-hidden"
+>
+  {/* Fondo decorativo opcional */}
+  <div className="absolute inset-0 opacity-10 pointer-events-none">
+    <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100/20 rounded-full blur-3xl animate-blob"></div>
+    <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-200/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+  </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <div
-            className={`text-center mb-16 transform transition-all duration-1000 ${
-              isVisible.mision
-                ? "translate-y-0 opacity-100"
-                : "translate-y-10 opacity-0"
-            }`}
-          >
-            <div className="inline-block mb-4">
-              <span className="px-4 py-2 bg-gradient-to-r from-green-600 to-blue-600 text-white text-sm font-semibold rounded-full">
-                🎯 Nuestra Identidad
-              </span>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Header */}
+    <div
+      className={`text-center mb-16 transform transition-all duration-1000 ${
+        isVisible.mision
+          ? "translate-y-0 opacity-100"
+          : "translate-y-10 opacity-0"
+      }`}
+    >
+      <div className="inline-block mb-4">
+        <span className="px-4 py-2 bg-gradient-to-r from-green-600 to-blue-600 text-white text-sm font-semibold rounded-full">
+          🎯 Nuestra Identidad
+        </span>
+      </div>
+      <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-900 to-green-900 bg-clip-text text-transparent mb-6">
+        Quiénes Somos
+      </h2>
+    </div>
+
+    {/* Cards */}
+    <div className="grid lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Misión",
+          subtitle: "",
+          icon: <Building2 className="w-10 h-10" />,
+          color: "from-blue-600 to-blue-800",
+          content:
+            "Brindar servicios de diseño y construcción, con los más altos estándares de calidad, innovación tecnológica y seguridad. Buscamos ser un aliado que cumpla y exceda las necesidades de nuestros clientes, ofreciendo soluciones innovadoras y sostenibles, con enfoque en la excelencia.",
+        },
+        {
+          title: "Visión",
+          subtitle: "",
+          icon: <Target className="w-10 h-10" />,
+          color: "from-orange-600 to-red-600",
+          content:
+            "Ser una empresa reconocida por nuestros clientes como líder en la industria del diseño y la construcción, con el firme ideal de brindar siempre la mejor solución para sus proyectos. Incorporamos tecnología e innovación para convertirnos en referencia de prácticas constructivas sostenibles y responsables.",
+        },
+        {
+          title: "Política de Calidad",
+          subtitle: "En 7BJ PROYECTOS DISEÑO Y CONSTRUCCIÓN S.A DE C.V.",
+          icon: <Award className="w-10 h-10" />,
+          color: "from-green-600 to-emerald-600",
+          content:
+            "Estamos comprometidos con todos nuestros clientes, buscando por medio de la mejora continua ser un aliado que brinde confianza y soluciones profesionales en cada uno de nuestros proyectos y servicios.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className={`group relative transform transition-all duration-1000 hover:scale-105 ${
+            isVisible.mision
+              ? "translate-y-0 opacity-100"
+              : "translate-y-20 opacity-0"
+          }`}
+          style={{ transitionDelay: `${index * 200}ms` }}
+        >
+          <div className="absolute -inset-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl blur"></div>
+          <div className="relative bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-100 h-full">
+            {/* Icono */}
+            <div
+              className={`w-20 h-20 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-6 transition-transform duration-300 shadow-lg`}
+            >
+              {item.icon}
             </div>
-            <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-900 to-green-900 bg-clip-text text-transparent mb-6">
-              Quiénes Somos
-            </h2>
-          </div>
 
-          {/* Cards */}
-          <div className="grid lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Misión",
-                icon: <Building2 className="w-10 h-10" />,
-                color: "from-blue-600 to-blue-800",
-                content:
-                  "Brindar servicios de diseño y construcción con altos estándares de calidad, innovación tecnológica y seguridad, ofreciendo soluciones sostenibles con enfoque en excelencia.",
-              },
-              {
-                title: "Visión",
-                icon: <Target className="w-10 h-10" />,
-                color: "from-orange-600 to-red-600",
-                content:
-                  "Ser reconocida como líder en diseño y construcción, referencia en prácticas constructivas sostenibles e innovadoras.",
-              },
-              {
-                title: "Política de Calidad",
-                icon: <Award className="w-10 h-10" />,
-                color: "from-green-600 to-emerald-600",
-                content:
-                  "Compromiso con los clientes mediante mejora continua, brindando confianza y soluciones profesionales.",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className={`group relative transform transition-all duration-1000 hover:scale-105 ${
-                  isVisible.mision
-                    ? "translate-y-0 opacity-100"
-                    : "translate-y-20 opacity-0"
-                }`}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                <div className="absolute -inset-1 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl blur"></div>
-                <div className="relative bg-gradient-to-br from-white to-slate-50 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-slate-100 h-full">
-                  <div
-                    className={`w-20 h-20 bg-gradient-to-r ${item.color} rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-6 transition-transform duration-300 shadow-lg`}
-                  >
-                    {item.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-blue-900 mb-4 group-hover:text-purple-900 transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-700 leading-relaxed">
-                    {item.content}
-                  </p>
-                  <div className="mt-6 w-0 group-hover:w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-700 rounded-full"></div>
-                </div>
-              </div>
-            ))}
+            {/* Título y subtítulo */}
+            <h3 className="text-2xl font-bold text-blue-900 mb-1 group-hover:text-purple-900 transition-colors">
+              {item.title}
+            </h3>
+            {item.subtitle && (
+              <p className="text-sm text-slate-500 mb-4 italic">
+                {item.subtitle}
+              </p>
+            )}
+
+            {/* Contenido */}
+            <p className="text-slate-700 leading-relaxed">{item.content}</p>
+
+            <div className="mt-6 w-0 group-hover:w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-700 rounded-full"></div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Servicios Section */}
       <section
